@@ -1,0 +1,37 @@
+.my-form{
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  .exp-card{
+      padding-top:90px;
+  }
+  .example-card{
+      text-align:center;
+      padding: 50px;
+  }
+  .mat-form-field{
+    width: 100%;
+  }
+  .body{
+    background-color: #c5c5c5; 
+  }
+  .container{
+      height:100%;
+  }
+  .mat-card {
+    box-shadow: 0 17px 33px -1px rgba(0,0,0,.2), 0 14px 18px 0 rgba(0,0,0,.14), 0 20px 36px 0 rgba(0,0,0,.12);
+}
+.mat-raised-button{
+    width:25%;
+}
+.reg{
+    font-style: normal;
+    font-family: initial;
+    text-align: left;
+    margin: 0px 0px 35px 0px;
+    color: darkblue;  
+}
+img{
+  width: 60%;
+}

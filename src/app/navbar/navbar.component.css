@@ -1,0 +1,12 @@
+.bg-dark{
+background-color: #343a40!important;
+color: white;
+font-family: initial;
+text-align: center;
+height: 5rem;
+}
+.col-center{
+    margin-left: 34rem;
+    font-weight: 600;
+    font-size: 30px;
+}

@@ -1,0 +1,50 @@
+<div class="container">
+<div class="row  col-center">
+    <div class="col-lg-3 "></div>
+    <div class="col-lg-6 exp-card">
+      <mat-card class="example-card">
+        <div class="row">
+            <div class=" col-lg-3 reg">
+                <h2>Quiz Registration</h2>
+            </div>
+            <div class=" col-lg-9 ">
+                <img class="logo" src="assets/image/download.png">
+            </div>
+        </div>
+        <mat-card-content>
+            <form class="my-form" [formGroup]="registerForm">
+              <div class="example-container">
+                <mat-form-field appearance="outline">
+                  <mat-label>Email</mat-label>
+                  <input matInput placeholder="Email" type="email" formControlName="Email"
+                  name="Email" required >
+                  <mat-error *ngIf="registerForm.controls.Email.hasError('email') && !registerForm.controls.Email.hasError('required')">
+                      Please enter a valid email address
+                  </mat-error>
+                  <mat-error *ngIf="registerForm.controls.Email.hasError('required')">
+                      Email is required
+                  </mat-error>
+                </mat-form-field>
+              </div>
+              <div class="example-container">
+                <mat-form-field appearance="outline">
+                  <mat-label>Name</mat-label>
+                  <input matInput placeholder="Name" type="text" formControlName="Name" required>
+                  <mat-error>Name Required!</mat-error>
+                </mat-form-field>
+            </div>
+          </form>
+        </mat-card-content>
+        <mat-card-actions>
+          <a [routerLink]="['/quiz']"  >
+          <button mat-raised-button [disabled]="!registerForm.valid" class="btn btn-primary">Start</button>
+          </a>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+    <div class="col-lg-3 "></div>
+    </div>
+  </div>
+
+
+
