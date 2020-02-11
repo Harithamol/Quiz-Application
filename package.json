@@ -2,7 +2,7 @@
   "name": "quizapp",
   "version": "0.0.0",
   "scripts": {
-    "postinstall": "ng build --aot -prod"
+    "heroku-postbuild": "ng build --prod"
   },
   "private": true,
   "dependencies": {
