@@ -4,11 +4,11 @@ const path = require('path');
 
 const app = express();
 
-app.use(express.static('/dist/quizapp'));
+app.use(express.static('Harithamol/Quiz-Application/dist/'));
 
 app.get('/*', function(req,res) {
     
-res.sendFile(path.join('/dist/quizapp/index.html'));
+res.sendFile('./dist/quizapp/index.html');
 });
 
 app.listen(process.env.PORT || 8080);
